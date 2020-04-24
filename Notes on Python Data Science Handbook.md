@@ -1,6 +1,6 @@
 # Notes on Python Data Science Handbook
 
-[Python Data Science Handbook] (https://github.com/yaxing0zhao/PythonDataScienceHandbook/tree/master/notebooks)
+[Python Data Science Handbook](https://github.com/yaxing0zhao/PythonDataScienceHandbook/tree/master/notebooks)
 
 ## ipython
 
