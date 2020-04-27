@@ -58,25 +58,25 @@
 
 ## Pandas
 
-03:01: **series and dataframe** 创建, index
+03:01: **series and dataframe** 创建, index, `df1.shape()`(dim(df1))
 
-03:02: series and dataframe 子集选取
+03:02: series and dataframe 子集选取`df1.iloc[:nrow, :ncol], df1[colname]`
 
-03:03: dataframe 数学运算，自动对齐或产生NA。
+03:03: dataframe 数学运算，自动对齐或产生NA, `a.add(b, fil), 。
 
-03:04: missing value: `np.nan, np.ffill, np.bfill`
+03:04: missing value: `np.nan(),df1.isnull(),df1.notnull(), df1.ffill(), df1.bfill(),df1.droupna(axis = 'colums')`
 
 03:05: multi-index: dataframe 🔛series by `stack()`, multi-index dataframe 取子集时index must be sorted. `reset_index() `相当于melt: multi-index to index, `reverse is set_index()`.
 
-03:06: df combination: np.concatenate( see 02:02), `pd.concat()`: 参数选项类似mySQL。`append()`类似rbind()
+03:06: df combination: np.concatenate( see 02:02), `pd.concat(df1, df2)`: 参数选项类似mySQL。`df1.append(df2)`类似rbind()
 
-03:07: merge and join: `merge()` 相当于SQL中的join。
+03:07: merge and join: `pd.merge(df1,df2, left_on='keyword1', right_on='keyword2', on='keyword3', suffixes=["_L", "_R"])'), df1.join(df2)` 相当于SQL中的join。
 
-03:08: groupby: `describe() `that computes several common aggregates for each column and returns the result. split-apply-combine operation, `groupby(), aggregation(), filter(), transform() and apply()`:类似apply in R. Mapping: replace a_idx with b_idx.
+03:08: groupby: `df1.mean(axis='columns')`, `df1.describe() `,`df1.groupby('key').sum(), df1.groupby('key').aggregate(['min', np.median, max]), df1.groupby('key').apply(fun),`,  `filter(), transform() and apply()`:类似apply in R. `df1.groupby(mapping).sum()`: replace a_idx with b_idx.
 
-03:09: pivot table: 多变量groupby 的简化版。`pivot_table(), pd.cut()`, ***应用实例***。
+03:09: pivot table: 多变量groupby 的简化版。`df1.pivot_table(data, values=None, index=None, columns=None, aggfunc={'survived':sum, 'fare':'mean'}, fill_value=None, margins=False, dropna=True, margins_name='All')` `pivot_table(), pd.cut()`, ***应用实例***。
 
-03:10: string：文本操作和R类似功能，***应用实例***。
+03:10: string：文本操作和R类似功能，`mystr.str.len()` ***应用实例***。
 
 03:11: time; pd.datatime and pd.datautil, pd.tseries.offsets module. Np.array(), ***应用实例***。
 
