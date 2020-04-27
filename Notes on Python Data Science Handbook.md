@@ -4,21 +4,28 @@
 
 ## ipython
 
-01:00: ipython, jupyter
+### 01:00
+ipython, jupyter
 
-01:01: `sum?`
+### 01:01
+`sum?`
 
-01:02: shortcuts: ctrl+l:Clear terminal screen
+### 01:02
+shortcuts: ctrl+l:Clear terminal screen
 
-01:03: **magic commands**: `%paste, %run pyscirpt.py, %timeit, %lsmagic `
+### 01:03
+**magic commands**: `%paste, %run pyscirpt.py, %timeit, %lsmagic `
 
-01:04: `%history`
+### 01:04
+`%history`
 
-01:05: `!`
+### 01:05
+`!`
 
-01:06: `%xmode, %debug, %pdb`
+### 01:06
+`%xmode, %debug, %pdb`
 
-01:07:
+### 01:07
 
 - `%time`: Time the execution of a single statement
 
@@ -36,23 +43,32 @@
 
 ## NumPy
 
-02:01: 批量创建**array**
+### 02:01
+批量创建**array**
 
-02:02: array操作，子集，`copy，reshape，concatenate (cbind, rbind, append), splitting: vsplit, hsplit.`
+### 02:02
+ array操作，子集，`copy，reshape，concatenate (cbind, rbind, append), splitting: vsplit, hsplit.`
 
-02:03: NumPy 中向量化操作，各种数学运算，减少使用functions和loop。
+### 02:03
+NumPy 中向量化操作，各种数学运算，减少使用functions和loop。
 
-02:04: 统计运算，NumPy中函数比python自带函数要快！array上的统计运算。
+### 02:04
+统计运算，NumPy中函数比python自带函数要快！array上的统计运算。
 
-02:05: array向量间操作。
+### 02:05
+array向量间操作。
 
-02:06: array逻辑操作，是否，比较
+### 02:06
+array逻辑操作，是否，比较
 
-02:07: fancy index: 批量选取子集 `list[idx], array[row_idx, col_idx]`, 各种选取方法……
+### 02:07
+fancy index: 批量选取子集 `list[idx], array[row_idx, col_idx]`, 各种选取方法……
 
-02:08: sorting array：排序及部分排序
+### 02:08
+sorting array：排序及部分排序
 
-02:09: structured array: similar to dataframe in pandas
+### 02:09
+structured array: similar to dataframe in pandas
 
 
 
@@ -98,46 +114,66 @@ time; pd.datatime and pd.datautil, pd.tseries.offsets module. Np.array(), ***应
 
 ## Matplotlib
 
-04:01: matplotlib: style, `put.show() `只在末尾一次就好。`fig.save fig(filename.png).` 多图布局。
+### 04:01
+matplotlib: style, `put.show() `只在末尾一次就好。`fig.save fig(filename.png).` 多图布局。
 
-04:02 lineplot: 坐标轴，图例
+### 04:02
+lineplot: 坐标轴，图例
 
-04:03: scatter plot: 大数据首选`plt.plot()`.
+### 04:03
+scatter plot: 大数据首选`plt.plot()`.
 
-04:04: error bar: 包括连续error。
+### 04:04
+error bar: 包括连续error。
 
-04:05: 密度图和轮廓图。
+### 04:05
+密度图和轮廓图。
 
-04:10: 修改坐标轴
+### 04:10
+修改坐标轴
 
-04:14: **seaborn** 主题画图更美观，用它！
+### 04:14
+**seaborn** 主题画图更美观，用它！
 
 
 
 ## ML
 
-05:02: array: sample * feature. Target col is the predicted class/feature. **ML的基本步骤**：import/instantiate/fit/predict. Linear regression, GaussianNB, across-validation, PCA, GMM cluster, hand-written digits, Isomap (dimensionality reduction) 实例。
+### 05:02
+array: sample * feature. Target col is the predicted class/feature. **ML的基本步骤**：import/instantiate/fit/predict. Linear regression, GaussianNB, across-validation, PCA, GMM cluster, hand-written digits, Isomap (dimensionality reduction) 实例。
 
-05:03: **cross-validation**， validation-curve, learning_curve
+### 05:03
+**cross-validation**， validation-curve, learning_curve
 
-05:04: feature engineering: categorical, text, image, derived features, missing value imputation.
+### 05:04
+feature engineering: categorical, text, image, derived features, missing value imputation.
 
-05:05: naive bayes: multi-NB
+### 05:05
+naive bayes: multi-NB
 
-05:06: linear regression, regularization
+### 05:06
+linear regression, regularization
 
-05:07: SVA
+### 05:07
+SVA
 
-05:08: RF
+### 05:08
+RF
 
-05:09: PCA: tends to be highly affected by outliers, RandomizedPCA and SparsePCA
+### 05:09
+PCA: tends to be highly affected by outliers, `RandomizedPCA` and `SparsePCA`
 
-05:10: manifold learning: multidimensional scaling (MDS), locally linear embedding (LLE), and isometric mapping (IsoMap).
+### 05:10
+manifold learning: multidimensional scaling (MDS), locally linear embedding (LLE), and isometric mapping (IsoMap).
 
-05:11: k-means
+### 05:11
+k-means
 
-05:12: gaussian mixtures
+### 05:12
+gaussian mixtures
 
-05:13: kernel density estimation
+### 05:13
+kernel density estimation
 
-05:14: image features
+### 05:14
+image features
