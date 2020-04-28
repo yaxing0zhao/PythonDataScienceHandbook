@@ -132,8 +132,8 @@ time; pd.datatime and pd.datautil, pd.tseries.offsets module. Np.array(), ***应
 ## Matplotlib
 
 ### 04:01
-matplotlib: style, `plt.plot(x,y,color='red', linetype='solid', lable='linelable')`('-r', '-ok') , 
-                    ylim,xlim: `plt.xlim(n1, n2), plt.axis([x1,x2,y1,y2])` 
+matplotlib: style, `plt.plot(x,y,color='red', linetype='solid', lable='linelable')`('-r', '-ok') ,     
+                    ylim,xlim: `plt.xlim(n1, n2), plt.axis([x1,x2,y1,y2])`     
                     title: `plt.title('title')`
                     `plt.legend(numpoints=1)`
                     `plt.colorbar()`
