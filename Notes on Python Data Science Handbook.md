@@ -47,11 +47,11 @@ shortcuts: ctrl+l:Clear terminal screen
 批量创建**array**， `np.arrange(10).reshape((2,5))`
 
 ### 02:02
- array操作，`a1.ndim, a1.shape, a1.size, a1.dtype` 
-            子集，`a1[:,0]` 
-            操作`a1.copy()，a1.reshape((nrow, ncol))，
-            np.concatenate([a1,a2], axis=1)` (cbind, rbind, append), 
-            splitting: `np.vsplit(a1, [2]), np.hsplit(a1, [2]).`
+ array操作，`a1.ndim, a1.shape, a1.size, a1.dtype`     
+            子集，`a1[:,0]`     
+            操作`a1.copy()，a1.reshape((nrow, ncol))，    
+            np.concatenate([a1,a2], axis=1)` (cbind, rbind, append),     
+            splitting: `np.vsplit(a1, [2]), np.hsplit(a1, [2]).`    
 
 ### 02:03
 NumPy 中向量化操作，各种数学运算，减少使用functions和loop。
@@ -69,7 +69,7 @@ array逻辑操作，是否`&, |, ~, ^, bool(24 & 59)`，比较
 fancy index: 批量选取子集 `list[idx], array[row_idx, col_idx]`, 各种选取方法……
 
 ### 02:08
-sorting array：排序及部分排序`np.sort(a1, axis=0)`, `np.argsort(a1)`return args index. 
+sorting array：排序及部分排序`np.sort(a1, axis=0)`, `np.argsort(a1)`return args index.     
               部分排序`np.partition(a1, 3, axis=1)`
 
 ### 02:09
@@ -92,31 +92,31 @@ dataframe 数学运算，自动对齐或产生NA, `a.add(b, fill_value=fill)` �
 missing value: `np.nan(),df1.isnull(),df1.notnull(), df1.ffill(), df1.bfill(),df1.droupna(axis = 'colums')`
 
 ### 03:05
-multi-index: dataframe 🔛series by `stack()`, multi-index dataframe 取子集时index must be sorted. 
+multi-index: dataframe 🔛series by `stack()`, multi-index dataframe 取子集时index must be sorted.     
               `reset_index() `相当于melt: multi-index to index, `reverse is set_index()`.
 
 ### 03:06
-df combination: np.concatenate( see 02:02), 
-                `pd.concat(df1, df2)`: 参数选项类似mySQL。`
-                df1.append(df2)`类似rbind()
+df combination: np.concatenate( see 02:02),     
+                `pd.concat(df1, df2)`: 参数选项类似mySQL。    `
+                df1.append(df2)`类似rbind()    
 
 ### 03:07
-merge and join: `pd.merge(df1,df2, left_on='keyword1', right_on='keyword2', on='keyword3', suffixes=["_L", "_R"])'),
+merge and join: `pd.merge(df1,df2, left_on='keyword1', right_on='keyword2', on='keyword3', suffixes=["_L", "_R"])'),    
                   df1.join(df2)` 相当于SQL中的join。
 
 ### 03:08
 groupby: `df1.mean(axis='columns')`, `df1.describe() `,
           `df1.groupby('key').sum(), 
-          df1.groupby('key').aggregate(['min', np.median, max]), 
-          df1.groupby('key').apply(fun),`,  
-          `filter(), transform() and apply()`:类似apply in R. 
-          `df1.groupby(mapping).sum()`: replace a_idx with b_idx.
+          df1.groupby('key').aggregate(['min', np.median, max]),     
+          df1.groupby('key').apply(fun),`,      
+          `filter(), transform() and apply()`:类似apply in R.     
+          `df1.groupby(mapping).sum()`: replace a_idx with b_idx.    
 
 ### 03:09
-pivot table: 多变量groupby 的简化版。
-                `df1.pivot_table(data, values=None, index=None, columns=None, aggfunc={'survived':sum, 'fare':'mean'},
-                fill_value=None, margins=False, dropna=True, margins_name='All')` 
-              ` pivot_table(), pd.cut()`, ***应用实例***。
+pivot table: 多变量groupby 的简化版。    
+                `df1.pivot_table(data, values=None, index=None, columns=None, aggfunc={'survived':sum, 'fare':'mean'},    
+                fill_value=None, margins=False, dropna=True, margins_name='All')`     
+              ` pivot_table(), pd.cut()`, ***应用实例***。    
 
 ### 03:10
 string：文本操作和R类似功能，`mystr.str.len()` ***应用实例***。
@@ -132,19 +132,19 @@ time; pd.datatime and pd.datautil, pd.tseries.offsets module. Np.array(), ***应
 ## Matplotlib
 
 ### 04:01
-matplotlib: style, `plt.plot(x,y,color='red', linetype='solid', lable='linelable')`('-r', '-ok') ,     
-                    ylim,xlim: `plt.xlim(n1, n2), plt.axis([x1,x2,y1,y2])`     
-                    title: `plt.title('title')`
-                    `plt.legend(numpoints=1)`
-                    `plt.colorbar()`
-                    `plt.errorbar(x,y,yerr=dy, fmt='.k', color='red',ecolor='lightgray', elinewidth=3, capsize=0)`
-                    `plt.fill_between(x, y-dy, y+dy, color='gray',alpha=0.2)`
-                    参考线`plt.axvline(0, color='k',linetype='--')`
-                    条形图`plt.hist(cmap='Blues')`
-                    `ax.set()`
-                     `put.show() `只在末尾一次就好。
-                     保存`fig.savefig(filename.png).`
-                     多图布局`plt.subplot(2,1,1) #(row, col, panel number)` 。
+matplotlib: style, `plt.plot(x,y,color='red', linetype='solid', lable='linelable')`('-r', '-ok') ,         
+                    ylim,xlim: `plt.xlim(n1, n2), plt.axis([x1,x2,y1,y2])`         
+                    title: `plt.title('title')`    
+                    `plt.legend(numpoints=1)`    
+                    `plt.colorbar()`    
+                    `plt.errorbar(x,y,yerr=dy, fmt='.k', color='red',ecolor='lightgray', elinewidth=3, capsize=0)`    
+                    `plt.fill_between(x, y-dy, y+dy, color='gray',alpha=0.2)`    
+                    参考线`plt.axvline(0, color='k',linetype='--')`    
+                    条形图`plt.hist(cmap='Blues')`    
+                    `ax.set()`    
+                     `put.show() `只在末尾一次就好。    
+                     保存`fig.savefig(filename.png).`    
+                     多图布局`plt.subplot(2,1,1) #(row, col, panel number)` 。    
 
 ### 04:02
 lineplot: 坐标轴，图例
@@ -162,10 +162,10 @@ error bar: 包括连续error。
 修改坐标轴
 
 ### 04:14
-**seaborn** 主题画图更美观，用它！和ggplot2差不多。
-            `import seaborn as sns
-            sns.set(), sns.axes_style(style='ticks')`
-            pair plot`sns.pairplot(iris, hue='species', size=2.5)`
+**seaborn** 主题画图更美观，用它！和ggplot2差不多。    
+            `import seaborn as sns    
+            sns.set(), sns.axes_style(style='ticks')`    
+            pair plot`sns.pairplot(iris, hue='species', size=2.5)`    
             `sns.joinplot()`
 
 
@@ -173,7 +173,7 @@ error bar: 包括连续error。
 ## ML
 
 ### 05:02
-array: sample * feature. Target col is the predicted class/feature. **ML的基本步骤**：import/instantiate/fit/predict. Linear regression, GaussianNB, across-validation, PCA, GMM cluster, hand-written digits, Isomap (dimensionality reduction) 实例。
+array: sample * feature. Target col is the predicted class/feature.     **ML的基本步骤**：import/instantiate/fit/predict.     Linear regression, GaussianNB, across-validation, PCA, GMM cluster, hand-written digits, Isomap (dimensionality reduction) 实例。
 
 ### 05:03
 **cross-validation**， validation-curve, learning_curve
